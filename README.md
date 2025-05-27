@@ -196,3 +196,7 @@ Ao final deste projeto, as cooperativas e produtores terão acesso a uma ferrame
 * Aumentar a precisão e consistência dos resultados;
 * Melhorar a eficiência dos processos agrícolas;
 * Facilitar a integração de inteligência artificial no campo.
+
+## **Referências**
+
+[1] Charytanowicz, M., Niewczas, J., Kulczycki, P., Kowalski, P., & Lukasik, S. (2010). Seeds [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5H30K.

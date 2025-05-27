@@ -24,6 +24,7 @@ __pycache__/
 *.pyo
 *.pyd
 *.sqlite3
+__init__.py
 
 # Ambientes virtuais Python
 venv/

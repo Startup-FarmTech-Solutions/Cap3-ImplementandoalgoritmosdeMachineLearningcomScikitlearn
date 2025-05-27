@@ -17,7 +17,7 @@
 
 3. **Armazenamento intermediário** (opcional):
 
-   * Após o pré-processamento, pode-se salvar um **novo CSV limpo** ou usar um **banco de dados** pequeno como **SQLite** para consultas mais complexas.
+   * Após o pré-processamento, pode-se salvar um **novo CSV limpo**.
 
 4. **Uso**:
 
@@ -32,7 +32,7 @@
 
 ---
 
-## ✅ **2. Onde os dados serão armazenados, tratados e usados**
+## **2. Onde os dados serão armazenados, tratados e usados**
 
 | Etapa                       | Local de Armazenamento                | Ferramentas                      |
 | --------------------------- | ------------------------------------- | -------------------------------- |
@@ -44,7 +44,7 @@
 
 ---
 
-## ✅ **3. Estrutura do arquivo de dados (.csv)**
+## **3. Estrutura do arquivo de dados (.csv)**
 
 ### Colunas (baseado no dataset de sementes UCI):
 

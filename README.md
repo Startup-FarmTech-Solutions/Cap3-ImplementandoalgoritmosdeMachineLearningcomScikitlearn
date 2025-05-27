@@ -62,8 +62,40 @@ O projeto segue as etapas da metodologia **CRISP-DM (Cross Industry Standard Pro
 
 1. **Entendimento do Negócio**
 
-   * Levantamento das necessidades no contexto agrícola.
-   * Definição do problema e dos objetivos do projeto.
+#### Fluxo de Dados
+
+1. O dataset original está em formato `.txt`.
+2. Os dados serão carregados em memória com `pandas` para pré-processamento.
+3. Após o tratamento, o dataset limpo será salvo em `.csv`.
+4. Os dados tratados serão usados para:
+   - Treinamento de modelos de Machine Learning.
+   - Análises estatísticas.
+   - Visualizações.
+
+#### Estrutura de Dados
+
+| Coluna | Descrição |
+|--------|----------|
+| area | Área da semente |
+| perimeter | Perímetro |
+| compactness | Compacidade |
+| kernel_length | Comprimento do grão |
+| kernel_width | Largura do grão |
+| asymmetry | Coeficiente de assimetria |
+| kernel_groove | Comprimento do sulco do grão |
+| class | Classe (1, 2 ou 3) |
+
+#### Armazenamento
+
+- **Dados brutos**: txt
+- **Dados tratados**: txt limpo
+- **Modelos**: arquivos `.pkl` ou similares
+- **Resultados**: 
+
+#### Banco de Dados
+
+- Decidiu-se utilizar **txt** como estrutura de armazenamento.
+
 
 2. **Entendimento dos Dados**
 

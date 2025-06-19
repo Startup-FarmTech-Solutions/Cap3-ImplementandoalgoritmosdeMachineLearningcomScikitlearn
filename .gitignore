@@ -32,8 +32,6 @@ ENV/
 env/
 .venv/
 
-# Checkpoints do Jupyter Notebook
-.ipynb_checkpoints/
 
 # Arquivos temporários
 *.log

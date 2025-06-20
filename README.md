@@ -1,13 +1,31 @@
-# Cap3-ImplementandoalgoritmosdeMachineLearningcomScikitlearn
-A classificação de grãos é uma etapa fundamental no controle de qualidade dentro da cadeia produtiva agrícola. Atualmente, em muitas cooperativas de pequeno e médio porte, esse processo ainda é realizado de forma manual por especialistas, utilizando inspeção visual e ferramentas simples.
+FIAP - Faculdade de Informática e Administração Paulista 
 
----
+<p align="center">
+<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
+</p>
 
-# 🌾 **Projeto: Da Terra ao Código — Automatizando a Classificação de Grãos com Machine Learning**
+<br>
 
----
+# 🌾  Da Terra ao Código — Automatizando a Classificação de Grãos com Machine Learning
 
-## 📄 **Descrição do Projeto**
+## Nome do grupo
+
+## 👨‍🎓 Integrantes: 
+- <a href="https://www.linkedin.com/in/antoniobarros99/">Antonio Ancelmo Neto Barros </a>
+- <a>Beatriz pilecaarte de Melo 
+- <a>Francismar Alves Martins Junior </a> 
+- <a href="https://https://www.linkedin.com/in/vitor-eiji/">Vitor Eiji Fernandes Teruia</a> 
+- <a href="https://www.linkedin.com/in/matheus-soares04">Matheus Soares Bento da Silva</a>
+
+## 👩‍🏫 Professores:
+### Tutor(a) 
+- <a href="https://www.linkedin.com/in/leonardoorabona/">Leo Ruiz</a>
+### Coordenador(a)
+- <a href="https://www.linkedin.com/company/inova-fusca">André Godoi</a>
+
+--- 
+
+## 📜 Descrição
 
 A classificação de grãos é uma etapa fundamental no controle de qualidade dentro da cadeia produtiva agrícola. Atualmente, em muitas cooperativas de pequeno e médio porte, esse processo ainda é realizado de forma manual por especialistas, utilizando inspeção visual e ferramentas simples. Isso gera desafios como alta demanda de tempo, custos operacionais elevados e possíveis erros humanos, afetando diretamente a eficiência e a qualidade do produto final.
 
@@ -34,24 +52,7 @@ O desenvolvimento deste projeto se justifica pela necessidade crescente de **aut
 * Redução de custos operacionais.
 * Tomada de decisão mais assertiva.
 * Contribuição para a transformação digital no agronegócio.
-
----
-
-## 🎯 **Objetivos**
-
-### 🔹 **Objetivo Geral**
-
-Desenvolver uma solução baseada em Machine Learning capaz de classificar grãos de trigo automaticamente a partir de suas características físicas, utilizando um dashboard interativo para facilitar a utilização pelos usuários.
-
-### 🔸 **Objetivos Específicos**
-
-* Realizar análise exploratória e pré-processamento dos dados.
-* Implementar e comparar diferentes modelos de classificação.
-* Otimizar os modelos para aumentar a acurácia e a robustez.
-* Avaliar os modelos utilizando métricas como acurácia, precisão, recall, F1-score e matriz de confusão.
-* Desenvolver um dashboard interativo que permita a utilização do modelo de classificação.
-* Documentar todo o processo no GitHub com código, relatórios e arquivos auxiliares.
-
+* 
 ---
 
 ## 🔬 **Metodologia — CRISP-DM**
@@ -254,118 +255,56 @@ O Random Forest foi escolhido como modelo final pois apresentou o melhor equilí
 
 Essa abordagem de testar múltiplos algoritmos garante uma escolha **baseada em dados**, e não apenas em suposições teóricas. Além disso, o pipeline criado é facilmente reutilizável e extensível para novas versões do sistema.
 
-
 ---
 
 
-5. **Otimização**
-
-   * Aplicação de **Grid Search** e/ou **Random Search** para ajuste de hiperparâmetros.
-   * Escolha do modelo com melhor desempenho.
-
-6. **Avaliação**
-
-   * Avaliação final com métricas:
-
-     * Acurácia
-     * Precisão
-     * Recall
-     * F1-score
-     * Matriz de confusão
-   * Análise de erros e limitações.
-
-7. **Implantação (Deploy)**
-
-   * Desenvolvimento de um **dashboard interativo com Streamlit**.
-   * Interface gráfica amigável para utilização do modelo.
-   * (Opcional) Integração com banco de dados para armazenar resultados.
-
----
-
-## 🏗️ **Estrutura do Projeto (Arquitetura de Pastas)**
-
+## 📁 Estrutura de pastas
 ```
-Classificacao-Graos-ML/
-├── 📁 dados/
-│   ├── seeds_dataset.csv
-│   └── dados_tratados.csv
-├── 📁 notebooks/
-│   ├── 1_analise_exploratoria.ipynb
-│   ├── 2_modelagem.ipynb
-│   ├── 3_otimizacao.ipynb
-│   └── 4_dashboard_streamlit.ipynb
-├── 📁 modelos/
-│   └── modelo_final.pkl
-├── 📁 dashboard_streamlit/
+├── app/
 │   ├── app.py
-│   ├── model.pkl
-│   └── requirements.txt
-├── 📁 imagens/
-│   ├── boxplot.png
-│   ├── heatmap_correlacao.png
-│   ├── matriz_confusao.png
-│   ├── scatterplot.png
-│   └── dashboard.png
-├── 📁 banco_de_dados/
-│   └── modelo_banco.sql
+│   └── requisitos_dashboard
+├── dados/
+│   ├── processados/
+│   └── seeds_tratado.csv
+├── doc/
+│   ├── arquitetura_dados.md
+│   └── notebooks/
+├── .gitignore
+├── LICENSE
 ├── README.md
-└── LICENSE
+└── requirements.txt
+```
+## 🔧 Como executar o código
+
+### 1. Clonar o repositório
+
+```
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+### 2. crie um ambiene virtual (opcional, mas recomendado)
+```
+python -m venv .venv
+source .venv/bin/activate  # Linux/macOS
+.venv\Scripts\activate     # Windows
+```
+### 3. instalar as dependencias
+```
+pip install -r requirements.txt
+```
+### 4. executar os notebooks
+```
+jupyter notebook notebooks/
+```
+### 5. executar o dashboard
+```
+streamlit run app/dashboard_streamlit/app.py
 ```
 
----
+## 🗃 Histórico de lançamentos
+     
+* 0.1.0 - 19/06/2025
+    *
 
-## 🚦 **Kanban de Organização (Sugestão)**
+## 📋 Licença
 
-### 🔧 **Backlog**
-
-* Download e organização do dataset.
-* Definir escopo completo e arquitetura de dados.
-* Levantamento dos requisitos do dashboard e funcionalidades.
-
-### 🧠 **Design**
-
-* Criar fluxograma da solução.
-* Desenhar o layout do dashboard Streamlit.
-* Planejar a estrutura de notebooks, modelos e banco de dados.
-
-### 🚀 **A Fazer**
-
-* Realizar análise exploratória dos dados.
-* Tratar dados (outliers, normalização).
-* Implementar modelos (KNN, SVM, Random Forest).
-* Avaliar e comparar modelos.
-* Realizar otimização dos hiperparâmetros.
-* Exportar modelo final treinado (.pkl).
-* Criar dashboard interativo no Streamlit.
-* Desenvolver banco de dados (opcional).
-* Documentar todo o projeto no README.
-* Gravar vídeo de apresentação.
-
-### ✅ **Feito**
-
-* Tarefas concluídas.
-
----
-
-## 🧠 **Insights Esperados**
-
-1. **Insight Técnico:**
-   Avaliar quais características dos grãos são mais relevantes para a classificação. Identificar padrões que poderiam passar despercebidos na análise manual, como correlações entre área, compacidade e comprimento do sulco.
-
-2. **Insight Operacional:**
-   Demonstrar que é possível implementar uma solução acessível, barata e eficiente que automatiza um processo tradicionalmente manual, democratizando o acesso à inteligência artificial no setor agrícola, especialmente para pequenas e médias cooperativas.
-
----
-
-## 🚀 **Impacto Final**
-
-Ao final deste projeto, as cooperativas e produtores terão acesso a uma ferramenta capaz de:
-
-* Reduzir o tempo de classificação dos grãos;
-* Aumentar a precisão e consistência dos resultados;
-* Melhorar a eficiência dos processos agrícolas;
-* Facilitar a integração de inteligência artificial no campo.
-
-## **Referências**
-
-[1] Charytanowicz, M., Niewczas, J., Kulczycki, P., Kowalski, P., & Lukasik, S. (2010). Seeds [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5H30K.
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>

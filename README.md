@@ -262,7 +262,7 @@ Essa abordagem de testar múltiplos algoritmos garante uma escolha **baseada em 
 ```
 ├── app/
 │   ├── app.py
-│   └── requisitos_dashboard_... (arquivo de requisitos, ex: .txt)
+│   └── requisitos_dashboard
 ├── assets/ 
 ├── dados/
 │   ├── processados/
